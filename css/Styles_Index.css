@@ -1,0 +1,60 @@
+/*sidebar secundario - banner de publicidad*/
+.sidebar2 {
+	height: 400px;
+}
+
+/*slideshow*/
+#slideshow1{
+	margin-left: -13px;
+}
+
+/*imagenes inicio*/
+.post .thumb{
+	overflow: hidden;
+}
+
+.post .thumb img{
+	width: 100%;
+	height: 190px;
+}
+
+/*titulos*/
+.post .post-title a{
+	display: inline-block;
+	color: #454545;
+}
+
+/*hover*/
+.post .thumb:hover img{
+	--webkit-transform: scale(1.05); /* chrome */
+	--moz-transform: scale(1.05); /* firefox */
+	--o-transform: scale(1.05); /* opera */
+	transform: scale(1.05);
+	filter: brightness(0.9);
+}
+
+/*media screen*/
+/*media screen*/
+@media screen and (max-width: 1030px){
+	.post .thumb img{
+		height: 150px;
+	}
+}
+
+@media screen and (max-width: 770px){
+	.post .thumb img{
+		height: 280px;
+	}
+}
+
+@media screen and (max-width: 560px){
+	.post .thumb img{
+		height: 190px;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.post .thumb img{
+		height: 150px;
+	}
+}

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0
+    maximum-scale=1.0, minium-scale=1.0">
+	<title>DAYS FC | Web Official</title>
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="../css/Master.css">
+	<link rel="stylesheet" href="../css/Seccion_Uniformes.css">
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+</head>
+<body onload="heightSidebar()">
+
+	<!-- /.header-->
+	<!-- /.header-->
+	<header>
+		<div class="container">
+			<div class="row">
+				<!-- /.header escudo-->
+				<section class="escudo col-md-6">
+
+					<div class="img_escudo hidden-xs pull-left">						
+						<img src="../img/Escudo del Days.png">	
+					</div>
+
+					<div class="titulos pull-left">
+						<h2>DAYS FC</h2>
+						<h2>Football Blogspot</h2>
+					</div>
+
+					<!-- /.input responsive-->
+					<label for="btn_menu"><i class="fa fa-bars"></i></label>
+
+				</section> <!-- /.header escudo-->
+				
+				<!-- /.input responsive-->
+				<input type="checkbox" id="btn_menu" onchange="javascript:showContent()">
+
+				<!-- /.patrocinadores-->
+				<section id="patrocinadores" class="patrocinadores col-xs-12  col-sm-12 col-md-6">
+
+					<ul>
+						<li><a href="#">EA SPORTS</a></li>
+						<li><a href="#">FIRST TOUCH</a></li>
+						<li><a href="#">DLS 20</a></li>
+					</ul>	
+
+					<ul>
+						<li><a href="#">KONAMI</a></li>
+						<li><a href="https://m.youtube.com/channel/UC9o8Zb9HhEbW9vE2FRO_k8g" target="_blank">YOU TUBE</a></li>
+					</ul>
+
+				</section> <!-- /.patrocinadores-->	
+			</div>
+		</div>	
+	</header>
+
+	<!-- /.contenedor principal-->
+	<!-- /.contenedor principal-->
+	<section class="main container" id="main">
+
+		<!-- /.boton de ir arriba-->
+		<span class="ir-arriba glyphicon glyphicon-chevron-up"></span>
+
+		<!-- /.banner de publicidad - header -->
+		<!-- /.banner de publicidad - header -->
+		<div class="row hidden-md hidden-lg">
+			<article class="clearfix col-md-12">
+				<br class="hidden-md hidden-lg">
+				<div class="col-md-12 banner_head_and_foot">						
+					<a href="#"><img src="https://media1.giphy.com/headers/neurads/MdQPS9vNYzyE.gif"alt=""></a>			
+				</div>				
+			</article>			
+			<br class="hidden-md hidden-lg">
+		</div>
+		
+		<br class="hidden-xs">
+
+		<!-- /.sidebar-->
+		<!-- /.sidebar-->
+		<aside class="col-md-3 hidden-xs hidden-sm pull-right">	
+
+			<!-- /.sidebar principal-->
+			<div class="row aside-main">
+				<div class="col-md-12">
+					<input type="text" id="buscador" placeholder="Buscar">
+
+					<h2>Páginas</h2>
+					<ul>
+						<li>
+							<div class="barra"></div>
+							<a href="#"><p class="menu">Escudos</p></a>
+						</li>
+						<li>
+							<div class="barra"></div>
+							<a href="../html/Uniformes.html"><p class="menu">Uniformes</p></a>
+						</li>
+						<li>
+							<div class="barra"></div>
+							<a href="#"><p class="menu">Donaciones</p></a>
+						</li>
+					</ul>
+
+					<h2>You tube</h2>
+					<ul>
+						<li>
+							<div class="barra"></div>
+							<a href="https://m.youtube.com/channel/UC9o8Zb9HhEbW9vE2FRO_k8g" target="_blank"><p class="menu">MD0AM9 Games</p></a>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- /.sidebar principal-->
+
+			<br><br>
+
+			<!-- /.sidebar secundario-->			
+			<div class="row menu_pegajoso">
+				<div class="col-md-12">					
+					<div class="sidebar2">
+						<a href="#"><img src="../img/steam_banner.gif"></a>
+					</div>
+				</div>
+			</div>
+
+			<!-- /.contenido en blanco para generar contenido-->
+			<div id="sidebar3">
+
+		</aside> <!-- /.sidebar-->
+
+
+		<!-- /.posts-->
+		<!-- /.posts-->
+		<section class="posts col-md-9 box-shadow clearfix" id="posts">
+			
+			<!-- /.breadcrumb-->
+			<div class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb posts">
+						<li><a href="../Index.html"><img src="../icons/homex16.png" alt="inicio" title="Inicio"></a></li>
+						<li class="active">Escudos <small>Pg1</small></li>
+					</ol>
+				</div>
+			</div>
+			
+			<!-- /.titulo pagina-->
+			<h2>Escudos <small>/Football Blogspot</small></h2>
+
+			<!-- /.filtros de busqueda-->
+			<div class="row">
+				<form action="" name="filtersEscudo">
+					<div class="col-md-3">
+						<label for="">Ordenar Por</label>
+						<select name="selectOrderBy" id="" class="form-control">
+							<option value="orderByDefault">--</option>
+							<option value="optionRecientes">Recientes</option>
+							<option value="optionAntiguos">Antiguos</option>			
+							<option value="optionPopulars">Mas Populares</option>
+						</select>
+					</div>
+
+					<div class="col-md-3">
+						<label for="">Filtrar por Equipo</label>
+						<select name="selectFilterByTeam" id="" class="form-control">
+							<option value="optionByDefaultTeam">--</option>
+							<option value="">Days</option>
+							<option value="">PSG</option>
+							<option value="">Chelsea</option>
+							<option value="">Atletico de Madrid</option>
+							<option value="">Valencia</option>
+						</select>
+					</div>
+
+					<div class="col-md-3">
+						<label for="">Filtra por Autor</label>
+						<select name="selectFilterByAutor" id="" class="form-control">
+							<option value="optionByDefaultAutor">--</option>
+							<option value="">Milton Diaz</option>
+							<option value="">Lionel Messi</option>
+							<option value="">Cr7</option>
+							<option value="">James Rodriguez</option>
+							<option value="">Wayne Roonwy</option>
+						</select>
+					</div>
+				</form>
+			</div>
+
+			<hr>
+
+			<!-- /.escudos-->
+			<!-- /.escudos-->			
+
+			<!-- /.row 1-->
+			<div class="row">
+
+				<!-- /.escudo 1-->
+				<article class="col-xs-12 col-sm-6 col-md-6 uniforme">
+								
+					<!-- /.Contenedor escudo-->
+					<div class="col-md-12">
+
+						<!-- /.imagen escudo-->
+						<div class="col-md-12 img_un">						
+							<img src="../img/Escudo del Days.png" class="img_hover" alt="">	
+						</div>
+
+						<!-- /.Informacion escudo-->
+						<h2>Escudo Days</h2>
+						<h4>Creado Por: <small>Milton Diaz</small></h4>
+						<h4>Publicado el: <small>27/03/2021</small></h4>
+
+						<!-- /.botonos de like y descarga-->
+						<ul class="list-likes">
+							<li>
+								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+							</li>
+							<li>
+								<span class="number-likes">42</span>
+							</li>
+							<li>
+								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-down"></span></a>
+							</li>
+							<li>
+								<span class="number-likes">3</span>
+							</li>
+							<li>
+								<a download="[nombrearchivo.ext]" href="../img/dls18_1.jpg"
+								title="Descargar" style="font-size: 20px; padding: 10px;"><i class="fas fa-arrow-circle-down"></i></a>
+							</li>
+						</ul>						
+						 
+						<br>
+
+						<!-- /.boton de copiar url-->
+						<a onclick="getlink_img_unf1();" class="btn btn-primary">Copiar URL <span class="glyphicon glyphicon-link"></span></a>
+						<!-- /.funcion de copiar url al portapapeles-->
+						<script>
+							function getlink_img_unf1() {
+								var aux = document.createElement("input");
+								aux.setAttribute("value", "Hola mundo");
+								document.body.appendChild(aux);
+								aux.select();
+								document.execCommand("copy");
+								document.body.removeChild(aux);
+
+								// mostrar label de url
+								var label = document.getElementById("label-url1");
+								label.style.display = 'block';
+							}
+						</script>
+
+						<!-- /.boton de compartir-->
+						<a class="btn btn-success dropdown-toggle" type="button" id="dropdownbtn1" data-toggle="dropdown" aria-extended="true">Compartir <span class="caret"></span></a>
+
+						<!-- /.label de url copiada-->
+						<br><label for="" id="label-url1" class="label-url">Url Copiada!!</label>
+
+						<!-- /.lista de opciones para compartir-->
+						<ul style="text-align: center;" class="dropdown-menu col-xs-12 col-sm-12 col-md-12 col-lg-12" role="menu" aria-labelledby="dropdownbtn1">
+							<li role="presentation"><a target="_blank" role="item" href="https://www.facebook.com/sharer/sharer.php?u=[url]">Facebook</a></li>
+
+							<li role="presentation"><a target="_blank" role="item" href="https://twitter.com/intent/tweet?text=[texto]&url=[url]&hashtags=[hashtag]">Twitter</a></li>
+
+	                        <li role="presentation"><a target="_blank" role="item" href="https://api.whatsapp.com/send?text=[url]">WhatsApp</a><li>
+						</ul>
+					</div>	<!-- /.Informacion y botones-->
+
+					<hr class="hidden-md hidden-lg">					
+				</article> <!-- /.escudo 1-->
+
+				<!-- /.escudo 2-->
+				<article class="col-xs-12 col-sm-6 col-md-6 uniforme">
+								
+					<!-- /.Contenedor escudo-->
+					<div class="col-md-12">
+
+						<!-- /.imagen escudo-->
+						<div class="col-md-12 img_un">						
+							<img src="https://i.imgur.com/wJ0BgVr.png" class="img_hover" alt="">	
+						</div>
+
+						<!-- /.Informacion escudo-->
+						<h2>Escudo River Plate</h2>
+						<h4>Creado Por: <small>Milton Diaz</small></h4>
+						<h4>Publicado el: <small>27/03/2021</small></h4>
+
+						<!-- /.botonos de like y descarga-->
+						<ul class="list-likes">
+							<li>
+								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+							</li>
+							<li>
+								<span class="number-likes">27</span>
+							</li>
+							<li>
+								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-down"></span></a>
+							</li>
+							<li>
+								<span class="number-likes">1</span>
+							</li>
+							<li>
+								<a download="[nombrearchivo.ext]" href="../img/dls18_1.jpg"
+								title="Descargar" style="font-size: 20px; padding: 10px;"><i class="fas fa-arrow-circle-down"></i></a>
+							</li>
+						</ul>						
+						 
+						<br>
+
+						<!-- /.boton de copiar url-->
+						<a onclick="getlink_img_unf1();" class="btn btn-primary">Copiar URL <span class="glyphicon glyphicon-link"></span></a>
+						<!-- /.funcion de copiar url al portapapeles-->
+						<script>
+							function getlink_img_unf1() {
+								var aux = document.createElement("input");
+								aux.setAttribute("value", "Hola mundo");
+								document.body.appendChild(aux);
+								aux.select();
+								document.execCommand("copy");
+								document.body.removeChild(aux);
+
+								// mostrar label de url
+								var label = document.getElementById("label-url1");
+								label.style.display = 'block';
+							}
+						</script>
+
+						<!-- /.boton de compartir-->
+						<a class="btn btn-success dropdown-toggle" type="button" id="dropdownbtn1" data-toggle="dropdown" aria-extended="true">Compartir <span class="caret"></span></a>
+
+						<!-- /.label de url copiada-->
+						<br><label for="" id="label-url1" class="label-url">Url Copiada!!</label>
+
+						<!-- /.lista de opciones para compartir-->
+						<ul style="text-align: center;" class="dropdown-menu col-xs-12 col-sm-12 col-md-12 col-lg-12" role="menu" aria-labelledby="dropdownbtn1">
+							<li role="presentation"><a target="_blank" role="item" href="https://www.facebook.com/sharer/sharer.php?u=[url]">Facebook</a></li>
+
+							<li role="presentation"><a target="_blank" role="item" href="https://twitter.com/intent/tweet?text=[texto]&url=[url]&hashtags=[hashtag]">Twitter</a></li>
+
+	                        <li role="presentation"><a target="_blank" role="item" href="https://api.whatsapp.com/send?text=[url]">WhatsApp</a><li>
+						</ul>
+					</div>	<!-- /.Informacion y botones-->
+
+					<hr class="hidden-md hidden-lg">					
+				</article> <!-- /.escudo 2-->		
+			</div> <!-- /.row 1-->
+
+			<hr>
+
+			<!-- /.banner de publicidad - intermedio-->
+			<!-- /.banner de publicidad - intermedio-->
+			<div class="row">
+				<article class="clearfix col-md-12">
+					<div class="col-md-12 banner_head_and_foot" style="height: 130px;">						
+						<a href="#"><img src="https://media1.giphy.com/headers/neurads/MdQPS9vNYzyE.gif"alt=""></a>				
+					</div>				
+				</article>			
+			</div><br>			
+
+			<!-- /.paginacion-->
+			<!-- /.paginacion-->
+			<nav class="pagination1 block-center">
+				<ul class="pagination">
+					<li class="disabled"><a>&laquo;</a></li>
+					<li class="active"><a>1</a></li>
+					<li><a href="">2</a></li>
+					<li><a href="">&raquo;</a></li>
+				</ul>
+			</nav>
+		</section>	<!-- /.posts-->
+
+		<!-- /.banner de publicidad - pie de pagina-->
+		<!-- /.banner de publicidad - pie de pagina-->
+		<div class="row">
+			<article class="clearfix col-md-12">
+				<br>
+				<div class="col-md-12 banner_head_and_foot">						
+					<a href="#"><img src="https://media1.giphy.com/headers/neurads/MdQPS9vNYzyE.gif"alt=""></a>				
+				</div>				
+			</article>			
+		</div><br>
+	</section> <!-- /.contenedor principal-->
+
+	
+	<!-- / .footer-->
+	<!-- / .footer-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<section class="copyright">
+						<h2>DAYS FC</h2>
+						<p>Copyright © 2021 Days.com All rights reserved</p>
+					</section>
+				</div>
+
+				<div class="col-md-6">
+					<section class="iconos hidden-xs">
+						<a href=""><img src="../icons/send1.ico" alt="Correo" title="Contacto"></a>
+						<p>#ForzaDays #DLS20</p>
+					</section>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- /.scripts-->
+	<!-- /.scripts-->
+	<script src="../assets/js/jquery-3.5.1.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/app.js"></script>
+
+</body>
+</html>
