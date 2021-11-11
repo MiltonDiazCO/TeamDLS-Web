@@ -8,11 +8,6 @@
 	padding-bottom: 6px;
 }
 
-.post-help img{
-	width: 100%;
-	height: 320px;
-}
-
 .post-help ul{
 	margin-left: 25px;
 	font-size: 18px;
@@ -20,42 +15,4 @@
 
 .post-help ul li{
 	padding: 5px;
-}
-
-/*media screen*/
-/*media screen*/
-@media screen and (max-width: 992px){
-	.post-help img{
-		height: 200px;
-	}
-}
-
-@media screen and (max-width: 890px){
-	.post-help img{
-		width: 100%;
-	}	
-}
-
-@media screen and (max-width: 770px){
-	.post-help img{
-		height: 340px;
-	}
-}
-
-@media screen and (max-width: 540px){
-	.post-help img{
-		height: 240px;
-	}
-}
-
-@media screen and (max-width: 380px){
-	.post-help img{
-		height: 200px;
-	}	
-}
-
-@media screen and (max-width: 290px){
-	.post-help img{
-		height: 170px;
-	}	
 }
