@@ -8,68 +8,50 @@
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="../css/Master.css">
-	<link rel="stylesheet" href="../css/Seccion_Uniformes.css">
+	<link rel="stylesheet" href="../css/Uniformes_Escudos.css">
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
 </head>
 <body onload="heightSidebar()">
 
-	<!-- /.header-->
-	<!-- /.header-->
+	<!--/.header-->
 	<header>
 		<div class="container">
 			<div class="row">
-				<!-- /.header escudo-->
-				<section class="escudo col-md-6">
+				<section class="col-xs-6 col-sm-6 col-md-6 title">
+					<h2><a href="Index.html">Team DLS</a></h2>
+				</section>
 
-					<div class="img_escudo hidden-xs pull-left">						
-						<img src="../img/Escudo del Days.png">	
-					</div>
-
-					<div class="titulos pull-left">
-						<h2>DAYS FC</h2>
-						<h2>Football Blogspot</h2>
-					</div>
-
-					<!-- /.input responsive-->
-					<label for="btn_menu"><i class="fa fa-bars"></i></label>
-
-				</section> <!-- /.header escudo-->
-				
-				<!-- /.input responsive-->
-				<input type="checkbox" id="btn_menu" onchange="javascript:showContent()">
-
-				<!-- /.patrocinadores-->
-				<section id="patrocinadores" class="patrocinadores col-xs-12  col-sm-12 col-md-6">
-
+				<section class="col-md-6 hidden-xs hidden-sm dls-download">
 					<ul>
-						<li><a href="#">EA SPORTS</a></li>
-						<li><a href="#">FIRST TOUCH</a></li>
-						<li><a href="#">DLS 20</a></li>
-					</ul>	
-
-					<ul>
-						<li><a href="#">KONAMI</a></li>
-						<li><a href="https://m.youtube.com/channel/UC9o8Zb9HhEbW9vE2FRO_k8g" target="_blank">YOU TUBE</a></li>
+						<li><a href="#">DLS 21</a></li>
 					</ul>
+				</section>
 
-				</section> <!-- /.patrocinadores-->	
+				<section class="col-xs-6 col-md-6 hidden-md hidden-lg seccion-btnMenuResposive">
+					<label for="btn-showMenuResposive"><i class="fas fa-bars"></i></label>
+					<input class="hidden" type="checkbox" id="btn-showMenuResposive">
+				</section>
 			</div>
-		</div>	
-	</header> <!-- /.header-->
+		</div>
+	</header>
 
-	<!-- /.contenedor principal-->
-	<!-- /.contenedor principal-->
-	<section class="main container" id="main">
+	<!--/.-->
+	<!--/.-->
 
-		<!-- /.boton de ir arriba-->		
-		<span class="ir-arriba glyphicon glyphicon-chevron-up"></span>
+	<!--/.contenedor principal-->
+	<section class="container main" id="main">
 
-		<!-- /.banner de publicidad - header-->
-		<!-- /.banner de publicidad - header-->
+		<!--/.boton de ir arriba-->		
+		<span class="glyphicon glyphicon-chevron-up ir-arriba"></span>
+
+		<!--/.-->
+		<!--/.-->
+
+		<!--/.banner de publicidad - header-->
 		<div class="row hidden-md hidden-lg">
-			<article class="clearfix col-md-12">
+			<article class="col-md-12">
 				<br class="hidden-md hidden-lg">
-				<div class="col-md-12 banner_head_and_foot">						
+				<div class="col-md-12 banner-advertising">						
 					<a href="#"><img src="https://media1.giphy.com/headers/neurads/MdQPS9vNYzyE.gif"alt=""></a>			
 				</div>				
 			</article>			
@@ -78,92 +60,133 @@
 		
 		<br class="hidden-xs">
 
-		<!-- /.sidebar-->
-		<!-- /.sidebar-->
-		<aside class="col-md-3 hidden-xs hidden-sm pull-right">	
+		<!--/.-->
+		<!--/.-->
 
-			<!-- /.sidebar principal-->
-			<div class="row aside-main">
-				<div class="col-md-12">
-					<input type="text" id="buscador" placeholder="Buscar">
+		<!--/.sidebar-->
+		<aside class="col-md-3 hidden-xs hidden-sm pull-right" id="sidebar">
 
-					<h2>Páginas</h2>
+			<!--/.sidebar principal-->
+			<div class="row sidebar-main">
+				<div class="col-md-12" style="padding: 0px;">
+					
+					<div class="title-sidebar">
+						<h2>Team</h2>
+					</div>
+
 					<ul>
 						<li>
 							<div class="barra"></div>
-							<a href="../html/Escudos.html"><p class="menu">Escudos</p></a>
+							<a href="../html/Escudos.html"><p class="menu"><span><i class="fas fa-shield-alt"></i></span> Escudos</p></a>
 						</li>
 						<li>
 							<div class="barra"></div>
-							<a href="#"><p class="menu">Uniformes</p></a>
-						</li>
-						<li>
-							<div class="barra"></div>
-							<a href="#"><p class="menu">Donaciones</p></a>
+							<a href="#"><p class="menu"><span><i class="fas fa-tshirt"></i></span> Uniformes</p></a>
 						</li>
 					</ul>
 
-					<h2>You tube</h2>
+					<hr style="border-color: #b5b5b5;">
+
+					<h3 class="subtitle-sidebar">Otros artículos</h3>
+
 					<ul>
 						<li>
 							<div class="barra"></div>
-							<a href="https://m.youtube.com/channel/UC9o8Zb9HhEbW9vE2FRO_k8g" target="_blank"><p class="menu">MD0AM9 Games</p></a>
+							<a href="#"><p class="menu"><span><i class="fas fa-info-circle"></i></span> Ayuda</p></a>
+						</li>
+						<li>
+							<div class="barra"></div>
+							<a href="#"><p class="menu"><span><i class="fas fa-donate"></i></span> Donaciones</p></a>
 						</li>
 					</ul>
 				</div>
-			</div> <!-- /.sidebar principal-->
+			</div> <!--/.sidebar principal-->
 
-			<br><br>
+			<br>
 
-			<!-- /.sidebar secundario-->			
+			<!--/.sidebar publicidad-->			
 			<div class="row menu_pegajoso">
 				<div class="col-md-12">					
-					<div class="sidebar2">
+					<div class="sidebar-advertising">
 						<a href="#"><img src="../img/steam_banner.gif"></a>
 					</div>
 				</div>
 			</div>
 
-			<!-- /.contenido en blanco para generar contenido-->
-			<div id="sidebar3">
+			<!--/.contenido en blanco para generar contenido-->
+			<div id="sidebar-fill">
 
-		</aside> <!-- /.sidebar-->
+		</aside> <!--/.sidebar-->
 
+		<!--/.-->
+		<!--/.-->
 
-		<!-- /.posts-->
-		<!-- /.posts-->
-		<section class="posts col-md-9 box-shadow clearfix" id="posts">				
+		<!--/.articulos-->
+		<section class="col-md-9 posts" id="posts">				
 			
-			<!-- /.breadcrumb-->
-			<div class="row">
-				<div class="col-md-12">
-					<ol class="breadcrumb posts">
-						<li><a href="../Index.html"><img src="../icons/homex16.png" alt="inicio" title="Inicio"></a></li>
+			<!--/.breadcrumb-->
+			<div class="row" style="margin: 0px;">
+				<div class="col-md-12" style="padding: 0px;">
+					<ol class="breadcrumb">
+						<li>
+							<a href="../Index.html"><img src="../icons/homex16.png" alt="inicio" title="Inicio"></a>
+						</li>
+
 						<li class="active">Uniformes <small>Pg1</small></li>
 					</ol>
 				</div>
 			</div>
 			
-			<!-- /.titulo pagina-->
-			<h2>Uniformes <small>/Football Blogspot</small></h2>
+			<!--/.titulo de pagina-->
+			<h2 class="title-page">
+				Uniformes
+				<small>
+					<br class="hidden-sm hidden-md hidden-lg">
+					<label class="hidden-xs">/</label>actualizacion: 20/12/2021
+					<span class="glyphicon glyphicon-time hidden-xs hidden-sm"></span>
+				</small>
+			</h2>
 
-			<!-- /.filtros de busqueda-->
+			<!--/.filtros de busqueda-->
 			<div class="row">
+				<div class="col-md-12 options-filters">
+					<!-- /.mostrar filtros de busqueda-->
+					<label for="btn-showFilters" id="label-showFilters">Mostrar filtros de busqueda <span class="glyphicon glyphicon-filter"></span></label>
+					<input type="checkbox" id="btn-showFilters" class="hidden" autocomplete="off" onchange="javascript:showFilters()">
+
+					<!-- /.ocultar filtros de busqueda-->
+					<label style="display: none;" for="btn-hideFilters" id="label-hideFilters">Ocultar filtros de busqueda <span class="glyphicon glyphicon-menu-up"></span></label>
+					<input type="checkbox" id="btn-hideFilters" class="hidden" autocomplete="off" onchange="javascript:hideFilters()">
+				</div>
+			</div>
+
+			<div class="row" id="filters">
 				<form action="" name="filtersUniforms">
 					<div class="col-md-3">
-						<label for="">Ordenar Por</label>
-						<select name="selectOrderBy" id="" class="form-control">
-							<option value="optionOrderByDefault">--</option>
-							<option value="optionRecientes">Recientes</option>
-							<option value="optionAntiguos">Antiguos</option>			
-							<option value="optionPopulars">Mas Populares</option>
+						<label for="select-orderBy">Ordenar Por</label>
+						<select name="select-orderBy" id="select-orderBy" class="form-control">
+							<option value="option-orderByDefault">--</option>
+							<option value="option-recent">Recientes</option>
+							<option value="option-ancient">Antiguos</option>
 						</select>
 					</div>
 
 					<div class="col-md-3">
-						<label for="">Filtrar por Equipo</label>
-						<select name="selectFilterByTeam" id="" class="form-control">
-							<option value="optionByDefaultTeam">--</option>
+						<label for="select-byLeague">Filtra por Liga</label>
+						<select name="select-byLeague" id="select-byLeague" class="form-control">
+							<option value="option-defaultLeague">--</option>
+							<option value="">Liga BetPlay</option>
+							<option value="">Liga BBVA</option>
+							<option value="">Seria A</option>
+							<option value="">Premier League</option>
+							<option value="">Ligue One</option>
+						</select>
+					</div>
+
+					<div class="col-md-3">
+						<label for="select-byTeam">Filtrar por Equipo</label>
+						<select name="select-byTeam" id="select-byTeam" class="form-control">
+							<option value="option-defaultTeam">--</option>
 							<option value="">Days</option>
 							<option value="">PSG</option>
 							<option value="">Chelsea</option>
@@ -173,279 +196,244 @@
 					</div>
 
 					<div class="col-md-3">
-						<label for="">Filtra por Autor</label>
-						<select name="selectFilterByAutor" id="" class="form-control">
-							<option value="optionByDefaultAutor">--</option>
-							<option value="">Milton Diaz</option>
-							<option value="">Lionel Messi</option>
-							<option value="">Cr7</option>
-							<option value="">James Rodriguez</option>
-							<option value="">Wayne Roonwy</option>
-						</select>
-					</div>
+						<label for="txt-search">Buscar equipo</label>
+						<input type="text" name="txt-search" id="txt-search" class="form-control">
+					</div>		
 				</form>
-			</div>
+			</div> <!--/.filtros de busqueda-->
 
 			<hr>
 
-			<!-- /.uniformes-->
-			<!-- /.uniformes-->
+			<!--/.-->
+				<!--/.inicio fila-->
+			<!--/.-->
 
-			<!-- /.row 1-->
+			<!--/.row uniformes-->
 			<div class="row">
 
-				<!-- /.uniforme 1-->
-				<article class="col-xs-12 col-sm-6 col-md-6 uniforme">
+				<!--/.uniforme-->
+				<article class="col-xs-12 col-sm-6 col-md-6 uniforme-and-escudo">
 
-					<!-- /.modal - uniforme-->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<!--/.ventana modal uniforme-->
+					<div class="modal fade" id="uniforme1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   						<div class="modal-dialog" role="document">
     						<div class="modal-content">
 
       							<div class="modal-header">
-        							<h4 class="modal-title" id="exampleModalLabel">Uniforme Days FC</h4>		
+        							<h4 class="modal-title" id="uniforme1">Uniforme Days FC</h4>
       							</div>
 
 					      		<div class="modal-body">
-					        		<img src="https://www.uniformefutbol.com/images/uniformes-barcelona-local-messi-10-nino-kit-2020-2021_MX5324.jpg" alt=""data-toggle="modal" data-target="#exampleModal" style="width: 100%;">
+					        		<img src="https://media.contentapi.ea.com/content/www-easports/es_ES/fifa/ultimate-team/noticias/2015/fifa-16-fut-totw-kit-reveal/_jcr_content/par/image.img.jpg" alt=""data-toggle="modal" data-target="#uniforme1" style="width: 100%;">
 					      		</div>
 
 					      		<div class="modal-footer">
         							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       							</div>
-      
     						</div>
   						</div>
-					</div> <!-- /.modal - uniforme-->
+					</div> <!--/.ventana modal uniforme-->
 										
-					<!-- /.Contenedor Uniforme-->
+					<!--/.Contenido Uniforme-->
 					<div class="col-md-12">
 
-						<!-- /.imagen uniforme-->
-						<div class="col-md-12 img_un">						
-							<a href="#exampleModal"><img src="../img/Uniforme Local Days 04.png" class="img_hover" alt="" title="Previzualizar" data-toggle="modal" data-target="#exampleModal"></a>	
+						<!--/.imagen uniforme-->
+						<div class="col-md-12 img-uniforme-and-escudo">						
+							<a href="#uniforme1"><img src="../img/Uniforme Local Days 04.png" class="img_hover" alt="" title="Previzualizar" data-toggle="modal" data-target="#uniforme1"></a>
 						</div>
 
-						<!-- /.Informacion uniforme-->
-						<h2>Uniforme Days FC 2</h2>
-						<h4>Creado Por: <small>Milton Diaz</small></h4>
+						<!--/.Informacion uniforme-->
+						<h2 class="hidden-xs hidden-sm">Uniforme Days FC 2</h2>
+						<h3 class="hidden-md hidden-lg">Uniforme Days FC 2</h3>
 						<h4>Publicado el: <small>27/03/2021</small></h4>
 
-						<!-- /.botonos de like y descarga-->
-						<ul class="list-likes">
-							<li>
-								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-up"></span></a>
-							</li>
-							<li>
-								<span class="number-likes">30</span>
-							</li>
-							<li>
-								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-down"></span></a>
-							</li>
-							<li>
-								<span class="number-likes">2</span>
-							</li>
+						<!--/.botonos de descarga y compartir uniforme-->
+						<ul class="list-buttons">
 							<li>
 								<a download="[nombrearchivo.ext]" href="../img/dls18_1.jpg"
-								title="Descargar" style="font-size: 20px; padding: 10px;"><i class="fas fa-arrow-circle-down"></i></a>
+								title="Descargar"><i class="fas fa-arrow-circle-down"></i></a>
 							</li>
+
+							<li>
+								<label>/</label>
+							</li>
+
+							<li>
+								<a target="_blank" role="item" href="https://www.facebook.com/sharer/sharer.php?u=[url]" title="Compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
+							</li>
+
+							<li>
+								<a target="_blank" role="item" href="https://twitter.com/intent/tweet?text=[texto]&url=[url]&hashtags=[hashtag]" title="Compartir en Twitter"><i class="fab fa-twitter-square"></i></a>
+							</li>
+
+	                        <li>
+	                        	<a target="_blank" role="item" href="https://api.whatsapp.com/send?text=[url]" title="Compartir en WhatsApp"><i class="fab fa-whatsapp"></i></a>
+	                        <li>
 						</ul>						
 						 
 						<br>
 
-						<!-- /.boton de copiar url-->
-						<a onclick="getlink_img_unf1();" class="btn btn-primary">Copiar URL <span class="glyphicon glyphicon-link"></span></a>
-						<!-- /.funcion de copiar url al portapapeles-->
-						<script>
-							function getlink_img_unf1() {
-								var aux = document.createElement("input");
-								aux.setAttribute("value", "Hola mundo");
-								document.body.appendChild(aux);
-								aux.select();
-								document.execCommand("copy");
-								document.body.removeChild(aux);
+						<!--/.boton de copiar url-->
+						<a onclick="getLinkImg('Hola mundo', 'labelUrl1');" class="btn btn-primary btn-block btn-md"><span class="glyphicon glyphicon-link"></span> Copiar URL</a>
 
-								// mostrar label de url
-								var label = document.getElementById("label-url1");
-								label.style.display = 'block';
-							}
-						</script>
-
-						<!-- /.boton de compartir-->
-						<a class="btn btn-success dropdown-toggle" type="button" id="dropdownbtn1" data-toggle="dropdown" aria-extended="true">Compartir <span class="caret"></span></a>
-
-						<!-- /.label de url copiada-->
-						<br><label for="" id="label-url1" class="label-url">Url Copiada!!</label>
-
-						<!-- /.lista de opciones para compartir-->
-						<ul style="text-align: center;" class="dropdown-menu col-xs-12 col-sm-12 col-md-12 col-lg-12" role="menu" aria-labelledby="dropdownbtn1">
-							<li role="presentation"><a target="_blank" role="item" href="https://www.facebook.com/sharer/sharer.php?u=[url]">Facebook</a></li>
-
-							<li role="presentation"><a target="_blank" role="item" href="https://twitter.com/intent/tweet?text=[texto]&url=[url]&hashtags=[hashtag]">Twitter</a></li>
-
-	                        <li role="presentation"><a target="_blank" role="item" href="https://api.whatsapp.com/send?text=[url]">WhatsApp</a><li>
-						</ul>
-					</div>	<!-- /.Informacion y botones-->
+						<!--/.label de url copiada-->
+						<label for="" id="labelUrl1" class="label-url">Url Copiada!!</label>
+					</div>	<!--/.Contenido Uniforme-->
 
 					<hr class="hidden-md hidden-lg">					
-				</article> <!-- /.uniforme 1-->
+				</article> <!--/.uniforme-->
 
-				<!-- /.uniforme 2-->
-				<article class="col-xs-12 col-sm-6 col-md-6 uniforme">
+				<!-- /.-->
+					<!--/.nuevo uniforme-->
+				<!--/.-->
 
-					<!-- /.modal - uniforme-->
-					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<!--/.uniforme-->
+				<article class="col-xs-12 col-sm-6 col-md-6 uniforme-and-escudo">
+
+					<!--/.ventana modal uniforme-->
+					<div class="modal fade" id="uniforme2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   						<div class="modal-dialog" role="document">
     						<div class="modal-content">
 
       							<div class="modal-header">
-        							<h4 class="modal-title" id="exampleModalLabel">Uniforme Days FC</h4>		
+        							<h4 class="modal-title" id="uniforme2">Uniforme Days FC</h4>
       							</div>
 
 					      		<div class="modal-body">
-					        		<img src="https://www.uniformefutbol.com/images/uniformes-barcelona-local-messi-10-nino-kit-2020-2021_MX5324.jpg" alt=""data-toggle="modal" data-target="#exampleModal" style="width: 100%;">
+					        		<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/cd66dc28541629.55c9bfac24c93.png" alt=""data-toggle="modal" data-target="#uniforme2" style="width: 100%;">
 					      		</div>
 
 					      		<div class="modal-footer">
         							<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       							</div>
-      
     						</div>
   						</div>
-					</div> <!-- /.modal - uniforme-->
+					</div> <!--/.ventana modal uniforme-->
 										
-					<!-- /.Contenedor Uniforme-->
+					<!--/.Contenido Uniforme-->
 					<div class="col-md-12">
 
-						<!-- /.imagen uniforme-->
-						<div class="col-md-12 img_un">						
-							<a href="#exampleModal"><img src="https://1.bp.blogspot.com/-fshR5pfEs1s/Xx2lXeuukhI/AAAAAAAAhPI/RtdoCMcUagc2kaWM3OUXkml_od7eNbX6ACLcBGAsYHQ/s512/psg.png" class="img_hover" alt="" title="Previzualizar" data-toggle="modal" data-target="#exampleModal"></a>	
+						<!--/.imagen uniforme-->
+						<div class="col-md-12 img-uniforme-and-escudo">						
+							<a href="#uniforme2"><img src="https://1.bp.blogspot.com/-fshR5pfEs1s/Xx2lXeuukhI/AAAAAAAAhPI/RtdoCMcUagc2kaWM3OUXkml_od7eNbX6ACLcBGAsYHQ/s512/psg.png" alt="" title="Previzualizar" data-toggle="modal" data-target="#uniforme2"></a>
 						</div>
 
-						<!-- /.Informacion uniforme-->
-						<h2>Uniforme PSG</h2>
-						<h4>Creado Por: <small>Milton Diaz</small></h4>
+						<!--/.Informacion uniforme-->
+						<h2 class="hidden-xs hidden-sm">Uniforme PSG</h2>
+						<h3 class="hidden-md hidden-lg">Uniforme PSG</h3>
 						<h4>Publicado el: <small>27/03/2021</small></h4>
 
-						<!-- /.botonos de like y descarga-->
-						<ul class="list-likes">
+						<!--/.botonos de descarga y compartir uniforme-->
+						<ul class="list-buttons">
 							<li>
-								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-up"></span></a>
+								<a download="[nombrearchivo.ext]" href="../img/dls18_1.jpg"
+								title="Descargar"><i class="fas fa-arrow-circle-down"></i></a>
 							</li>
+
 							<li>
-								<span class="number-likes">30</span>
+								<label>/</label>
 							</li>
+
 							<li>
-								<a href="" class="btn-icons"><span class="glyphicon glyphicon-thumbs-down"></span></a>
+								<a target="_blank" role="item" href="https://www.facebook.com/sharer/sharer.php?u=[url]" title="Compartir en Facebook"><i class="fab fa-facebook-square"></i></a>
 							</li>
+
 							<li>
-								<span class="number-likes">2</span>
+								<a target="_blank" role="item" href="https://twitter.com/intent/tweet?text=[texto]&url=[url]&hashtags=[hashtag]" title="Compartir en Twitter"><i class="fab fa-twitter-square"></i></a>
 							</li>
-							<li>
-								<a download="[nombrearchivo.ext]" href="../img/dls18_1.jpg" title="Descargar" style="font-size: 20px; padding: 10px;"><i class="fas fa-arrow-circle-down"></i></a>
-							</li>
+
+	                        <li>
+	                        	<a target="_blank" role="item" href="https://api.whatsapp.com/send?text=[url]" title="Compartir en WhatsApp"><i class="fab fa-whatsapp"></i></a>
+	                        <li>
 						</ul>						
 						 
 						<br>
-						
-						<!-- /.boton de copiar url-->
-						<a onclick="getlink_img_unf2();" class="btn btn-primary">Copiar URL <span class="glyphicon glyphicon-link"></span></a>
-						<!-- /.funcion de copiar url al portapapeles-->
-						<script>
-							function getlink_img_unf2() {
-								var aux = document.createElement("input");
-								aux.setAttribute("value", "Hola mundo");
-								document.body.appendChild(aux);
-								aux.select();
-								document.execCommand("copy");
-								document.body.removeChild(aux);
 
-								// mostrar label de url
-								var label = document.getElementById("label-url2");
-								label.style.display = 'block';
-							}
-						</script>
+						<!--/.boton de copiar url-->
+						<a onclick="getLinkImg('Hello world', 'labelUrl2');" class="btn btn-primary btn-block btn-md"><span class="glyphicon glyphicon-link"></span> Copiar URL</a>
 
-						<!-- /.boton de compartir-->
-						<a class="btn btn-success dropdown-toggle" type="button" id="dropdownbtn1" data-toggle="dropdown" aria-extended="true">Compartir <span class="caret"></span></a>
+						<!--/.label de url copiada-->
+						<label for="" id="labelUrl2" class="label-url">Url Copiada2!!</label>
+					</div>	<!--/.Contenido Uniforme-->
 
-						<!-- /.label de url copiada-->
-						<br><label id="label-url2" class="label-url">Url Copiada!!</label>
+					<hr class="hidden-md hidden-lg">					
+				</article> <!--/.uniforme-->
+			</div><hr> <!--/.row uniformes-->
 
-						<!-- /.lista de opciones para compartir-->
-						<ul style="text-align: center;" class="dropdown-menu col-xs-12 col-sm-12 col-md-12 col-lg-12" role="menu" aria-labelledby="dropdownbtn1">
-							<li role="presentation"><a target="_blank" role="item" href="https://www.facebook.com/sharer/sharer.php?u=[url]">Facebook</a></li>
+			<!--/.-->
+				<!--/.fin fila-->
+			<!--/.-->
 
-							<li role="presentation"><a target="_blank" role="item" href="https://twitter.com/intent/tweet?text=[texto]&url=[url]&hashtags=[hashtag]">Twitter</a></li>
+			<!--/.-->
+			<!--/.-->
 
-	                        <li role="presentation"><a target="_blank" role="item" href="https://api.whatsapp.com/send?text=[url]">WhatsApp</a><li>
-						</ul>
-					</div>	<!-- /.Informacion y botones-->							
-				</article> <!-- /.uniforme 2-->		
-			</div> <!-- /.row 1-->
-
-			<hr>
-
-			<!-- /.banner de publicidad - intermedio-->
-			<!-- /.banner de publicidad - intermedio-->
+			<!--/.banner de publicidad - intermedio-->
 			<div class="row">
-				<article class="clearfix col-md-12">
-					<div class="col-md-12 banner_head_and_foot" style="height: 130px;">
+				<article class="col-md-12">
+					<div class="col-md-12 banner-advertising banner-half" style="height: 130px;">
 						<a href="#"><img src="https://media1.giphy.com/headers/neurads/MdQPS9vNYzyE.gif"alt=""></a>				
 					</div>				
 				</article>			
-			</div><br>
+			</div>
 
+			<!--/.-->
+			<!--/.-->
 
 			<!-- /.paginacion-->
-			<!-- /.paginacion-->
-			<nav class="pagination1 block-center">
+			<nav class="block-center pagination-nav">
 				<ul class="pagination">
 					<li class="disabled"><a>&laquo;</a></li>
 					<li class="active"><a>1</a></li>
-					<li><a href="">2</a></li>
-					<li><a href="">&raquo;</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">&raquo;</a></li>
 				</ul>
 			</nav>
-		</section>	<!-- /.posts-->
+		</section> <!--/.articulos-->
+
+		<!--/.-->
+		<!--/.-->
 
 		<!-- /.banner de publicidad - pie de pagina -->
-		<!-- /.banner de publicidad - pie de pagina -->
 		<div class="row">
-			<article class="clearfix col-md-12">
+			<article class="col-md-12">
 				<br>
-				<div class="col-md-12 banner_head_and_foot">						
+				<div class="col-md-12 banner-advertising">						
 					<a href="#"><img src="https://media1.giphy.com/headers/neurads/MdQPS9vNYzyE.gif"alt=""></a>				
 				</div>				
 			</article>			
 		</div><br>
-	</section> <!-- /.main container-->
+	</section> <!--/.contenedor principal-->
 
-	
-	<!-- /.footer-->
-	<!-- /.footer-->
+	<!-- /.-->
+	<!--/.-->
+
+	<!--/.footer-->
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
+				
 				<div class="col-md-6">
 					<section class="copyright">
-						<h2>DAYS FC</h2>
-						<p>Copyright © 2021 Days.com All rights reserved</p>
+						<h2>Team DLS</h2>
+						<p>#TeamDreamLeagueSoccer</p>
+						<p style="font-size: 16px; margin-top: -8px;"><b>Copyright © 2021 teamdls.com All rights reserved</b></p>
 					</section>
 				</div>
 
 				<div class="col-md-6">
 					<section class="iconos hidden-xs">
-						<a href=""><img src="../icons/send1.ico" alt="Correo" title="Contacto"></a>
-						<p>#ForzaDays #DLS20</p>
+						<a href="#contact-modal"><img src="../icons/send1.ico" alt="Correo" title="Contacto" data-toggle="modal" data-target="#contact-modal"></a>
+						<p>#ForzaDays #DLS20</p>						
 					</section>
 				</div>
 			</div>
 		</div>
 	</footer>
 
-	<!-- /.scripts-->
-	<!-- /.scripts-->
+	<!--/.-->
+	<!--/.-->
+	
+	<!--/.scripts-->
 	<script src="../assets/js/jquery-3.5.1.min.js"></script>
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/app.js"></script>
