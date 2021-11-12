@@ -17,6 +17,16 @@
 	cursor: pointer;
 }
 
+/*boton de buscar*/
+.btn-search {
+	position: absolute;
+	top: 25px;
+	float: left;
+	right: 16px;
+	background: #224699;
+	color: #fff;
+}
+
 /*uniformes*/
 .uniforme-and-escudo .img-uniforme-and-escudo {
 	padding: 0px 0px 10px 0px;
