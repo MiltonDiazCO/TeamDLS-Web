@@ -1,44 +1,72 @@
 "use strict"
-
-// funcion de calcular la altura del sidebar
+// funcion para calcular la altura del sidebar
 function heightSidebar() {
-	var varHeight = document.getElementById("posts").clientHeight - 860;	
-	document.getElementById('sidebar3').style.height = varHeight + "px";	
+	var alturaSidebar = document.getElementById("sidebar");
+
+	var Height = (document.getElementById("posts").clientHeight - alturaSidebar.clientHeight) + 10;
+	document.getElementById('sidebar-fill').style.height = Height + "px";	
 }
 
-// header responsive
-function showContent(){
-	var btn_menu = document.getElementById("btn_menu");
-	var patrocinadores = document.getElementById("patrocinadores");
+// funcion para mostrar el menu responsive
+function showMenuResponsive() {
+	var btnShow = document.getElementById("btn-showMenuResposive");
+	var menu = document.getElementById("menuResponsive");
 	var main = document.getElementById("main");
 	var footer = document.getElementById("footer");
-	var x = window.matchMedia("(max-width: 992px)");
-		
-	if (x.matches) {
-		patrocinadores.style.display = 'none';
 
-		if (btn_menu.checked) {
-			patrocinadores.style.display = 'block';
-			main.style.display = 'none';
-			footer.style.display = 'none';
-		} else {
-			patrocinadores.style.display = 'none';
-			main.style.display = 'block';
-			footer.style.display = 'block';
-		}
-			
+	if(btnShow.checked) {
+		menu.style.display = 'block';
+		main.style.display = 'none';
+		footer.style.display = 'none';
 	} else {
-		patrocinadores.style.display = 'block';
+		menu.style.display = 'none';
+		main.style.display = 'block';
+		main.style.display = 'block';
+	}
+}
 
+// mostrar filtros de busqueda
+function showFilters() {
+	var filters = document.getElementById("filters");	
+
+	var btnShowFilters = document.getElementById("btn-showFilters");
+	var labelShowFilters = document.getElementById("label-showFilters");
+	var btnHideFilters = document.getElementById("btn-hideFilters");
+	var labelHideFilters = document.getElementById("label-hideFilters");	
+	
+	if(btnShowFilters.checked) {
+		filters.style.display = 'block';
+		btnShowFilters.style.display = 'none';
+		labelShowFilters.style.display = 'none';
+
+		btnHideFilters.checked = false;
+		btnHideFilters.style.display = 'inline-block';
+		labelHideFilters.style.display = 'inline-block';
+	}
+}
+
+// ocultar filtros de busqueda
+function hideFilters() {
+	var filters = document.getElementById("filters");
+
+	var btnShowFilters = document.getElementById("btn-showFilters");
+	var labelShowFilters = document.getElementById("label-showFilters");
+	var btnHideFilters = document.getElementById("btn-hideFilters");
+	var labelHideFilters = document.getElementById("label-hideFilters");
+
+	if(btnHideFilters.checked) {
+		filters.style.display = 'none';
+		btnHideFilters.style.display = 'none';
+		labelHideFilters.style.display = 'none';
+
+		btnShowFilters.checked = false;
+		btnShowFilters.style.display = 'inline-block';
+		labelShowFilters.style.display = 'inline-block';
 	}
 }
 
 // boton ir_Arriba
 $(document).ready(function(){
-
-	// var xp = document.getElementById('main');
-	// var xp2 = xp.offsetHeight -500;
-
 	$(window).scroll(function() {
     	if ($(this).scrollTop() > 0) {
         	$('.ir-arriba').fadeIn('slow');
@@ -53,3 +81,17 @@ $(document).ready(function(){
     	$('html, body').animate({scrollTop: 0}, 600);
 	});
 });
+
+// funcion para obtener el link de un uniforme o escudo
+function getLinkImg(linkImg, labelName) {
+	var aux = document.createElement("input");
+	aux.setAttribute("value", linkImg);
+	document.body.appendChild(aux);
+	aux.select();
+	document.execCommand("copy");
+	document.body.removeChild(aux);
+
+	// mostrar label de url
+	var label = document.getElementById(labelName);
+	label.style.display = 'block';
+}
