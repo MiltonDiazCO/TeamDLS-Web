@@ -1,10 +1,37 @@
 "use strict"
+
+function cargarFuncionesInicio(indexPage) {
+	heightSidebar();
+	marginBotonIrArriba(indexPage);
+}
+
 // funcion para calcular la altura del sidebar
 function heightSidebar() {
 	var alturaSidebar = document.getElementById("sidebar");
 
 	var Height = (document.getElementById("posts").clientHeight - alturaSidebar.clientHeight) + 10;
 	document.getElementById('sidebar-fill').style.height = Height + "px";	
+}
+
+// funcion para calcular el margen derecho del boton de ir arriba
+function marginBotonIrArriba(indexPage) {
+	var anchoMain = document.getElementById("main").clientWidth;
+	var anchoVentana = window.innerWidth;
+
+	if(!indexPage) {
+		var margenExtra = 5;
+	} else {
+		var margenExtra = 20;
+	}
+
+	document.getElementById("ir-arriba").style.right = ((anchoVentana - anchoMain) / 2) + margenExtra + "px";
+
+	var x = window.matchMedia("(max-width: 767px)");
+
+	if(x.matches) {
+		document.getElementById("ir-arriba").style.right = '25px';
+		document.getElementById("ir-arriba").style.top = '85%';
+	}
 }
 
 // funcion para mostrar el menu responsive

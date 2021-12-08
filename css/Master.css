@@ -23,13 +23,12 @@ body{
 .ir-arriba{
 	padding: 20px;
 	background: #224699;
-	font-size: 20px;
+	font-size: 15px;
 	text-align: center;
 	color: #fff;
 	cursor: pointer;
 	position: fixed;
 	top: 75%;
-	right: 120px;
 	border-radius: 10px;
 	display: none;
 	z-index: 1000;
@@ -307,10 +306,6 @@ footer .iconos a{
 		box-shadow: 1px 1px 10px #888888;
 	}
 
-	.ir-arriba {
-		right: 20px;
-	}
-
 	header .title {
 		margin-left: -15px;
 	}
@@ -331,11 +326,6 @@ footer .iconos a{
 }
 
 @media screen and (max-width: 767px){
-	.ir-arriba {
-		top: 85%;
-		right: 25px;
-	}
-
 	header .title {
 		margin-left: 0px;
 	}
