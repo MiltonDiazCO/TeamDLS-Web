@@ -8,11 +8,11 @@
 	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../assets/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="../css/Master.css">
-	<link rel="stylesheet" href="../css/Ayuda.css">
+	<link rel="stylesheet" href="../css/Donaciones.css">
 	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
 </head>
 <body onload="heightSidebar()">
-	
+
 	<!--/.header-->
 	<header>
 		<div class="container">
@@ -45,8 +45,8 @@
 						<li><a href="../html/Kits.html"><span><i class="fas fa-suitcase"></i></span> Kits</a></li>
 						<li><a href="../html/Escudos.html"><span><i class="fas fa-shield-alt"></i></span> Escudos</a></li>
 						<li><a href="../html/Uniformes.html"><span><i class="fas fa-tshirt"></i></span> Uniformes</a></li>
-						<li><a href="#"><span><i class="fas fa-info-circle"></i></span> Ayuda</a></li>
-						<li><a href="../html/Donaciones.html"><span><i class="fas fa-donate"></i></span> Donaciones</a></li>
+						<li><a href="../html/Ayuda.html"><span><i class="fas fa-info-circle"></i></span> Ayuda</a></li>
+						<li><a href="#"><span><i class="fas fa-donate"></i></span> Donaciones</a></li>
 					</ul>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
 
 	<!--/.contenedor principal-->
 	<section class="container main" id="main">
-
+		
 		<!--/.boton de ir arriba-->		
 		<span class="glyphicon glyphicon-chevron-up ir-arriba"></span>
 
@@ -111,11 +111,11 @@
 					<ul>
 						<li>
 							<div class="barra"></div>
-							<a href="#"><p class="menu"><span><i class="fas fa-info-circle"></i></span> Ayuda</p></a>
+							<a href="../html/Ayuda.html"><p class="menu"><span><i class="fas fa-info-circle"></i></span> Ayuda</p></a>
 						</li>
 						<li>
 							<div class="barra"></div>
-							<a href="../html/Donaciones.html"><p class="menu"><span><i class="fas fa-donate"></i></span> Donaciones</p></a>
+							<a href="#"><p class="menu"><span><i class="fas fa-donate"></i></span> Donaciones</p></a>
 						</li>
 					</ul>
 				</div>
@@ -142,7 +142,7 @@
 
 		<!--/.artículos-->
 		<section class="col-md-9 posts" id="posts">
-
+			
 			<!--/.breadcrumb-->
 			<div class="row" style="margin: 0px;">
 				<div class="col-md-12" style="padding: 0px;">
@@ -151,121 +151,72 @@
 							<a href="../Index.html"><img src="../icons/homex16.png" alt="inicio" title="Inicio"></a>
 						</li>
 
-						<li class="active">Ayuda</li>
+						<li class="active">Donaciones</li>
 					</ol>
 				</div>
 			</div>
 
 			<!--/.titulo de pagina-->
-			<h1 style="margin-top: -5px; margin-bottom: 10px;">Centro de Ayuda</h1>
+			<h1 style="margin-top: -5px; margin-bottom: 10px;">Donaciones</h1>
 
-			<!--/.parrafo inicio de página-->
+			<!--/.parrafo de inicio-->
 			<div class="row">
-				<div class="col-md-12 post-help" style="margin-top: 5px;">
-
-					<p style="margin-top: -10px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit exercitationem animi aperiam quae mollitia, natus consequatur suscipit temporibus alias ducimus. Tenetur natus quae laboriosam quidem, atque. Ab optio doloremque illum, quod minus? Sequi ducimus corrupti, asperiores eveniet pariatur ipsa est! Minima labore consectetur minus eveniet ipsum necessitatibus temporibus, aperiam? Placeat?</p>
+				<div class="col-md-12 text-justify">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing, elit. Possimus, ex. Magni, accusantium assumenda sed et ducimus natus qui corrupti numquam. Deleniti cupiditate aspernatur molestias illum, rerum doloremque fugiat modi temporibus amet eos, ab nemo pariatur, autem. Eos laboriosam, quasi saepe!</p>
 				</div>
 			</div>
 
-			<!--/.índice-->
+			<!--/.formulario - cantidad de dinero a donar-->
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<section class="quantity-donations">
+						<form action="" name="form-donaciones">
+							<label for="input-oneDolar">$1 USD</label>
+							<input type="radio" name="menuDonaciones" id="input-oneDolar" form="form-donaciones" >
+
+							<br>
+
+							<label for="input-fiveDolars">$5 USD</label>
+							<input type="radio" name="menuDonaciones" id="input-fiveDolars" form="form-donaciones" >
+
+							<br>
+
+							<label for="input-tenDolars">$10 USD</label>	
+							<input type="radio" name="menuDonaciones" id="input-tenDolars" form="form-donaciones">
+						</form>
+					</section>
+				</div>
+			</div>
+
+			<!--/.informacion del usuario que va a hacer la donacion-->
 			<div class="row">
 				<div class="col-md-12">
-					<div class="indice">
-						<h2>Ver más....</h2>
+					
+					<section class="data-donations">
+						<form action="">
+							<label for="nombre">Nombre</label>
+							<input type="text" id="nombre" form="form-donaciones" class="form-control"> <br>
 
-						<ul>
-							<li><a href="#download-uniforms">Como descargar uniformes y escudos</a></li>
-							<li><a href="#download-kits">Como descargar kits</a></li>
-							<li><a href="#join-blog">Como unirme al blog</a></li>
-							<li><a href="#make-donations">Como realizo donaciones</a></li>	
-						</ul>
-					</div>
+							<label for="descripcion">Descripcion</label>
+							<textarea id="descripcion" form="form-donaciones" class="form-control"></textarea>
+
+							<br>
+
+							<input type="submit" value="Hacer Donacion" form="form-donaciones" class="btn btn-primary">
+						</form>
+					</section>
 				</div>
 			</div>
 
-			<!--/.-->
-			<!--/.-->
-
-			<!--/.seccion de descargar uniformes y escudos-->
+			<!--/.parrafo indicando los medias por los que se puede hacer las donaciones-->
 			<div class="row">
-				<article class="col-md-12 post-help" id="download-uniforms">
+				<div class="col-md-12">
+					<p>Las donaciones se pueden hacer a travez de tarjetas de credito y debito, paypal</p>
 
-					<h2>Descargar Uniformes</h2>
-
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur mollitia quam tempora corrupti, ex nihil incidunt velit rerum dicta culpa, dignissimos eveniet quo provident, omnis tempore delectus illum assumenda commodi, alias! Dolore explicabo rerum mollitia est sed repellendus, harum, iusto!</p>
-
-					<ul>
-						<li><b>Paso1: </b>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Unde, numquam?</li>
-						<li><b>Paso 2: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, vero.</li>
-						<li><b>Paso 3: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sint!</li>
-						<li><b>Paso 4: </b>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Ad, nemo?</li>
-						<li><b>Paso 5: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, officia.</li>						
-					</ul>
-
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi hic voluptates officiis culpa dicta tempore accusamus amet ad temporibus.</p>		
-				</article>
-			</div> <!--/.seccion de descargar uniformes y escudos-->
-
-			<!--/.-->
-			<!--/.-->
-
-			<!--/.kits-->
-			<div class="row">
-				<article class="col-md-12 post-help" id="download-kits">
-
-					<h2>Descargar Kits</h2>
-
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur mollitia quam tempora corrupti, ex nihil incidunt velit rerum dicta culpa, dignissimos eveniet quo provident, omnis tempore delectus illum assumenda commodi, alias! Dolore explicabo rerum mollitia est sed repellendus, harum, iusto!</p>
-
-					<ul>
-						<li><b>Paso1: </b>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Unde, numquam?</li>
-						<li><b>Paso 2: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, vero.</li>
-						<li><b>Paso 3: </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, sint!</li>						
-					</ul>
-
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quasi hic voluptates officiis culpa dicta tempore accusamus amet ad temporibus.</p>		
-				</article>
-			</div> <!--/.seccion de kits-->
-
-			<!--/.-->
-			<!--/.-->
-
-			<!--/.banner de publicidad - intermedio-->
-			<div class="row">
-				
-				<article class="col-md-12">
-					<br>				
-					<div class="col-md-12 banner-advertising banner-half" style="height: 130px;">
-						<a href="#"><img src="https://media1.giphy.com/headers/neurads/MdQPS9vNYzyE.gif"alt=""></a>				
-					</div>				
-				</article>			
+					<hr style="border-color: #8888;">
+				</div>
 			</div>
-
-			<!--/.-->
-			<!--/.-->
-
-			<!--/.seccion de unirse al blog-->
-			<div class="row">
-				<article class="col-md-12 post-help" id="join-blog">
-					<h2>Como unirme al blog</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur mollitia quam tempora corrupti, ex nihil incidunt velit rerum dicta culpa, dignissimos eveniet quo provident, omnis tempore delectus illum assumenda <b>commodi, alias!</b> Dolore explicabo rerum mollitia est sed repellendus, harum, iusto!</p>
-
-					<p>Lorem ipsum dolor, sit amet consectetur <b>adipisicing elit.</b> Debitis illum odit id obcaecati odio laborum, totam. Recusandae aperiam ipsum, minima?</p>
-				</article>
-			</div> <!--/.seccion de unirse al blog-->
-
-			<!--/.-->
-			<!--/.-->
-
-			<!--/.seccion de donaciones-->
-			<div class="row">
-				<article class="col-md-12 post-help" id="make-donations">
-					<h2>Como realizo una donacion</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur mollitia quam tempora corrupti, ex nihil incidunt velit rerum dicta culpa, dignissimos eveniet quo provident, omnis tempore delectus illum assumenda <b>commodi, alias!</b> Dolore explicabo rerum mollitia est sed repellendus, harum, iusto!</p>
-
-					<p>Lorem ipsum dolor, sit amet consectetur <b>adipisicing elit.</b> Debitis illum odit id obcaecati odio laborum, totam. Recusandae aperiam ipsum, minima?</p><hr>
-				</article>
-			</div> <!--/.seccion de donaciones-->
 		</section> <!--/.artículos-->
 
 		<!--/.-->
@@ -280,11 +231,12 @@
 				</div>				
 			</article>			
 		</div><br>
+
 	</section> <!--/.contenedor principal-->
 
 	<!--/.-->
 	<!--/.-->
-
+		
 	<!--/.footer-->
 	<footer id="footer">
 		<div class="container">
@@ -316,4 +268,4 @@
 	<script src="../assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/app.js"></script>
 </body>
-</html>	
+</html>

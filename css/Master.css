@@ -29,7 +29,7 @@ body{
 	cursor: pointer;
 	position: fixed;
 	top: 75%;
-	right: 8%;
+	right: 120px;
 	border-radius: 10px;
 	display: none;
 	z-index: 1000;
@@ -46,6 +46,7 @@ body{
 	height: 100%;
 }
 
+/*banner de publicidad - mitad de página*/
 .banner-half {
 	height: 130px;
 }
@@ -201,7 +202,6 @@ aside{
 
 /*sidebar de publicidad*/
 .sidebar-advertising {
-	/*height: 460px;*/
 	height: 75vh;
 }
 
@@ -212,7 +212,7 @@ aside{
 	height: 100%;
 }
 
-.menu_pegajoso{
+.menu-pegajoso{
 	position: sticky;
 	top: 30px;
 }
@@ -297,18 +297,8 @@ footer .iconos a{
 
 /*media screen*/
 @media screen and (max-width: 1210px){
-	.ir-arriba{
-		right: 5%;
-	}
-
 	footer .copyright h2{
 		width: 30%;
-	}
-}
-
-@media screen and (max-width: 1010px){
-	.ir-arriba{
-		right: 4%;
 	}
 }
 
@@ -317,8 +307,8 @@ footer .iconos a{
 		box-shadow: 1px 1px 10px #888888;
 	}
 
-	.ir-arriba{
-		right: 9%;
+	.ir-arriba {
+		right: 20px;
 	}
 
 	header .title {
@@ -340,15 +330,10 @@ footer .iconos a{
 	}	
 }
 
-@media screen and (max-width: 790px){
-	.ir-arriba{
-		right: 4%;
-	}
-}
-
 @media screen and (max-width: 767px){
-	.ir-arriba{
-		top: 80%;
+	.ir-arriba {
+		top: 85%;
+		right: 25px;
 	}
 
 	header .title {
@@ -379,10 +364,6 @@ footer .iconos a{
 }
 
 @media screen and (max-width: 350px){
-	.ir-arriba{
-		right: 6%;
-	}
-
 	header .title a {
 		font-size: 25px;
 	}
@@ -393,11 +374,6 @@ footer .iconos a{
 }
 
 @media screen and (max-width: 325px){
-	.ir-arriba{
-		right: 6%;
-		top: 85%;
-	}
-
 	.banner-half{
 		height: 100px;
 	}

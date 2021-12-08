@@ -1,0 +1,32 @@
+/*formulario - cantidad de dinero a donar*/
+.quantity-donations {
+	background: #f9f9f9;
+	border-radius: 5px;
+}
+
+.qunatity-donations form {
+	padding: 5px;
+}
+
+.quantity-donations label {
+	font-size: 16px;
+	padding-left: 30px;
+}
+
+.quantity-donations input[type="radio"] {
+	height: 16px;
+	width: 20px;
+	margin-top: 10px;
+}
+
+/*informacion del usuario que va a hacer la donacion*/
+.data-donations textarea {
+	min-width: 70%;
+	max-width: 100%;
+	min-height: 100px;
+	max-height: 140px;
+}
+
+.data-donations input[type="submit"] {
+	margin-bottom: 10px;
+}
