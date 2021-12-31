@@ -1,7 +1,11 @@
 /*articulos principales*/
+.post-skills {
+	font-size: 19px;
+}
+
 .post-skills ul{
 	margin-left: 20px;
-	font-size: 19px;
+	font-size: 18px;
 	text-align: justify;
 }
 
@@ -12,6 +16,6 @@
 /*sub-listas*/
 .post-skills .sub-list ul{
 	margin-left: 25px;
-	font-size: 18px;
+	font-size: 16px;
 	text-align: justify;
 }

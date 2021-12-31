@@ -81,7 +81,7 @@
 /*descripcion de los artículos*/
 .post-main p {
 	padding: 5px 8px 8px 8px;
-	font-size: 15px;
+	font-size: 18px;
 }
 
 /*boton de ir a*/
@@ -103,7 +103,7 @@
 
 /*imagenes de inicio*/
 .post-secondary .thumb img {
-	height: 180px;
+	height: 210px;
 }
 
 .post-secondary .thumb:hover img {
@@ -117,7 +117,7 @@
 
 /*descripcion de los artículos*/
 .post-secondary p {
-	font-size: 17px;
+	font-size: 18px;
 }
 
 /*boton de ir a*/

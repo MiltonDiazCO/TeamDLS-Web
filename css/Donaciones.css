@@ -1,3 +1,7 @@
+.opening-paragraph {
+	font-size: 18px;
+}
+
 /*formulario - cantidad de dinero a donar*/
 .quantity-donations {
 	background: #f9f9f9;
@@ -9,7 +13,6 @@
 }
 
 .quantity-donations label {
-	font-size: 16px;
 	padding-left: 30px;
 }
 

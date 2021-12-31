@@ -27,10 +27,16 @@ function marginBotonIrArriba(indexPage) {
 	document.getElementById("ir-arriba").style.right = ((anchoVentana - anchoMain) / 2) + margenExtra + "px";
 
 	var x = window.matchMedia("(max-width: 767px)");
+	var y = window.matchMedia("(max-width: 412px)");
 
 	if(x.matches) {
 		document.getElementById("ir-arriba").style.right = '25px';
 		document.getElementById("ir-arriba").style.top = '85%';
+	} 
+
+	if (y.matches) {
+		document.getElementById("ir-arriba").style.padding = '16px';
+		document.getElementById("ir-arriba").style.fontsize = '12px';
 	}
 }
 
